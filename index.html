@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>David J. Mally</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/me.css" />
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet" type="text/css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+
+  <body>
+      <div class="row">
+          <div class="large-4 columns large-centered" id="name">
+              <h1 class="text-center">David J. Mally</h1>
+              <p class="text-center"><a class="element" id="email-link" href="#">email</a> | <a href="https://github.com/djmally">github</a> | <!-- <a href="pdf/resume.pdf">resume</a> --> </p>
+          </div>
+      </div>
+      <div class="row margin-20">
+          <div class="large-3 columns large-centered">
+              <img src="img/portrait.jpg"/>
+          </div>
+      </div>
+
+      <div class="row panel">
+        <div class="large-8 columns large-centered">
+          <div class="margin-30">
+          <h4>About Me</h4>
+          </div>
+          <div class="row">
+            <div class="large-20 columns large-centered">
+                <p>I'm currently a software engineer at <a href="https://www.synack.com/">Synack</a>, where I work on distributed systems technology and web injection frameworks as part of our <a href="https://www.synack.com/2015/10/22/unleash-the-hydra/">Hydra</a> product. In 2016, I graduated from the <a href="http://www.upenn.edu/">University of Pennsylvania</a> with my bachelor's & master's degrees in computer science.</p>
+            </div>
+            <div class="large-20 columns large-centered">
+              <p>At Penn, I was a part of the <a href="https://www.stwing.upenn.edu/">Science & Technology Wing (STWing)</a>, as well as <a href="https://wqhsradio.org">WQHS</a>, Penn's student-run radio station. Academically, I was a TA for CIS {110, 240, 371}, and I co-taught <a href="http://cis198-2016s.github.io/">CIS 198: Rust Programming</a> in the spring 2016 semester with Kai Ninomiya & Terry Sun.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="large-12 columns large-centered">
+          <hr/>
+          <div class="row">
+            <div class="large-6 columns large-centered">
+                <p>Built with Github Pages. <a href="https://github.com/djmally/djmally.github.io">Page source.</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        (function() {
+            function reverse (str) {
+                var rev = "";
+                for (var i = 0; i < str.length; i++) {
+                    rev += str.charAt(str.length - 1 - i);
+                }
+                return rev;
+            }
+
+            var emailLink = document.getElementById("email-link");
+            var mailto = "mailto:" + reverse("moc.liamg@yllamjd");
+            emailLink.setAttribute("href", mailto);
+        })();
+      </script>
+      <img src="https://www.brewster-jennings.com/pixel.gif"/>
+  </body>
+</html>
+
